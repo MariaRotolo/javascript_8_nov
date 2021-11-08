@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+  .modal {
+    position: fixed;
+    left: 500px;
+    top: 20px;
+  
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+    z-index: 2;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 16px;
+    box-shadow: 0 0 16px black;
+    background: rgb(43, 43, 43);
+    color: rgb(240, 240, 240);
+    
+    transition: opacity 0.35s;
+  }
+
+  .modal h3 {
+    margin: 5px 0;
+    font-size: 1.6rem;
+  }
+
+  .modal__buttons {
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .modal__buttons button {
+    margin-left: 5px;
+    padding: 7.5px 15px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+  
+  #btn-accept {
+    border: 0;
+    background: rgb(16, 54, 158);
+    opacity: 0.6;
+    transition: all 0.35s;
+  }
+
+  #btn-accept:hover {
+    opacity: 1;
+  }
+  
+  #btn-accept:active {
+    opacity: 1;
+    background: lightskyblue;
+  }
+  
+  #btn-deny {
+    border: 0;
+    background: rgb(45, 121, 26);
+  }
+
+#container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden; 
+
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    margin: 30px 0;
+
+}
+
+.menu-icon {
+    width: 25px;
+}
+
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+
+}
+
+nav ul li a:hover{
+    color:crimson;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+
+}
+
+.col-1 {
+    flex-basis: 40% ;
+    position: relative;
+    margin-left: 50px;
+
+}
+
+.col-1 h2{
+    font-size: 54px;
+    line-height: 50px;
+
+}
+
+.col-1 h3{
+    font-size: 30px;
+    color: #707070;
+    font-weight: 100;
+    margin: 20px 0 10px;
+
+}
+
+.col-1 p{
+    font-size: 16px;
+    color: #b7b7b7;
+    font-weight: 100;
+    
+
+
+}
+
+.buy-button{
+    width: 120px;
+    height: 60px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(to right, blue, green);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+
+.buy-button img{
+    width: 30px;
+    display: none;
+}
+
+.buy-button:hover img{
+    display: block;
+
+
+}
+.buy-button:hover{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.col-1::after{
+    content: "";
+    width: 10px;
+    height: 57%;
+    background: darkblue;
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+
+.col-2 {
+    display: flex;
+    flex-basis: 60% ;
+    position: relative;
+    margin-left: 50px;
+    align-items: center;
+
+}
+
+.col-2 img {
+    width: 100%;
+
+}
+
+.color-box {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    background: linear-gradient( darkblue, green);
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+   transform: translateX(220px);
+}
+
+.add-btn img{
+    width: 50px;
+    margin-bottom: 5px;
+}
+
+.add-btn {
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.social-links img{
+    height:13px ;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.social-links{
+    width: 100%;
+    text-align: center;
+}
